@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+/* animated square */
+
+.animated-square {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(Odeg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* animated square - on demand animation */
+
+.animated-square-ondemand {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto 0;
+    background-color: lightcoral;
+}
+
+.animated-square-ondemand-spin {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* transition circle */
+
+.transition-circle {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto 0;
+    border-radius: 50%;
+    background-color: tomato;
+    transition: 3s;
+}
+
+/* .transition-circle:hover {
+    width: 75px;
+    height: 50px;
+    background-color: darkred;
+} */
+
+.transition-circle:hover {
+    transform: scale(.5);
+    background-color: darkred;
+}
