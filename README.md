@@ -1,2 +1,3 @@
-# wr5_html-css-iii
-Created with CodeSandbox
+# HTML/CSS III
+
+In this lecture we discuss media queries and animations.
